@@ -1,6 +1,0 @@
-<h1>AngularJS</h1>
-<blockquote>
-A very simple single-page/crud application<br />
-using AngularJS on the client side & Node.js + mongoDB on the server side.<br />
-<a href="http://ys-catalog-angularjs.herokuapp.com/">Demo</a>
-</blockquote>
