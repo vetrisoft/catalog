@@ -1,0 +1,8 @@
+project.ext {
+	nodeHome	= "$rootProject.buildDir/node-home"
+	nodeGroupId = "org.nodejs"
+	nodeName	= "node"
+	nodeVersion	= "0.10.28"
+	nodeExt		= "tar.gz"
+	localRepo 	= "file://$rootProject.buildDir/local-repo"
+}
