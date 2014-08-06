@@ -51,7 +51,19 @@ task zipPackages(type: Zip) {
     }
 }
 
+task tarPackages(type: Tar) {
+    description = "Tars the source distribution."
+	def outputDir = file("${project.buildDir}/trunk")
+	compression = Compression.GZIP
+    from outputDir
+    into('libs') {
+        from configurations.runtime
+    }
+}
+
+
 
 artifacts{
-  resultArchives zipPackages
+	resultArchives zipPackages
+    resultArchives tarPackages
 }
